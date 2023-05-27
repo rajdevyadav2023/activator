@@ -1,0 +1,64 @@
+.quote-container {
+    width: 80%;
+    height: 70vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0px 0px 20px #80808038, 0px 0px 10px #80808044;
+
+    & .quote-box {
+        height: 85%;
+        width: 100%;
+        background-color: #f1f1ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-y: auto;
+        border-radius: 10px;
+    }
+
+    & .quote-box h1 {
+        min-height: 50%;
+        height: auto;
+        background-color: #0f3f6e;
+        color: white;
+        padding: 2rem;
+        border-radius: 10px;
+        width: 90%;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    & .quote-controls {
+        height: 15%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    & .quote-controls button {
+        padding: .8rem 2rem;
+        background-color: #134c85;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        color: white;
+        transition: all .5s ease;
+        border-radius: 5px;
+    }
+
+    & .quote-controls button:hover {
+        background-color: #2771bb;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .quote-box .quote-text{
+        width: 90%;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,83 @@
+.goal-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    height: 90vh;
+    width: 100%;
+
+    & .goal-form {
+        background-color: #f1f1ff;
+        padding: 1rem;
+        width: 20%;
+        position: relative;
+    }
+& .goal-form p{
+    color: #888;
+}
+    & form input {
+        width: 100%;
+        height: 35px;
+        padding: 10px;
+        margin-top: 1rem;
+        border:2px solid #ddd;
+        outline-color: #ddd;
+        transition: all .5s ease;
+    }
+
+    & form input:focus {
+        outline-color: orange;
+    }
+& .coder{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #888;
+    font-size: 14px;
+}
+    &  .goals-container{
+        width: 75%;
+        height: 100%;
+        overflow-y: auto;
+    }
+    & .todo-list{
+        list-style: none;
+    }
+    & .todo-list li{
+        background-color: #f1f1ff;
+        margin-bottom: 1rem;
+        padding:.5rem .8rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #888;
+    }
+    & li button{
+        padding: .5rem 3rem;
+        outline: none;
+        border: none;
+        background-color: #134c85;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all .5s ease;
+    }
+    & li button:hover{
+        background-color: green;
+    }
+}
+@media (min-width:280px)and (max-width:700px) {
+    .goal-page{
+        display: block;
+    }
+    & .goal-page .goal-form{
+        width: 100%;
+        height: 25vh;
+        margin-bottom: 1rem;
+    }
+    & .goal-page .goals-container{
+        width: 100%;
+    }
+    & .goals-container li button{
+padding: .5rem 1rem;
+    }
+}
